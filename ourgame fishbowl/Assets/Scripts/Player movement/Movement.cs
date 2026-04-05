@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
     {
         Vector3 move = Vector3.zero;
         bool hit = Physics2D.Raycast(transform.position, Vector2.down, 1.5f, LayerMask.GetMask("Ground"));
-        Debug.DrawRay(transform.position, Vector2.down * 1.5f);
+        Debug.DrawRay(transform.position, Vector2.down * 3f);
 
         if (Input.GetKey(KeyCode.W) && GetIsGrounded())
         {
