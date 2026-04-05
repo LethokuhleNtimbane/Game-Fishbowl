@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class CameraMovement: MonoBehaviour
 {
     public float cameraspeed = 2f;
     public Transform target;
@@ -13,7 +13,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         Vector3 position = new Vector3(target.position.x,0, -10f);
+
         transform.position = Vector3.Slerp(transform.position, position, cameraspeed * Time.deltaTime);
     }
 }

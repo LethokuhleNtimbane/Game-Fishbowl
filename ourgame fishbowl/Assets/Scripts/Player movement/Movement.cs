@@ -5,7 +5,7 @@ public class Movement : MonoBehaviour
     public float speed = 10f;
     public Transform player;
     public bool inAir;
-    public float raxis;
+    
 
     bool right;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,15 +21,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W) )
         {
-            move.y += 1;
-
-            /* raxis = 30f;
-           while (inAir == true)
-            {
-                raxis = raxis - 1;
-                player.rotation = Quaternion.Euler(0f, 0f, raxis);
-            }*/
-         
+            move.y += 1; 
         }
         if (Input.GetKey(KeyCode.D) )
         {
@@ -47,14 +39,6 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             move.y += 1;
-
-            /* raxis = 30f;
-           while (inAir == true)
-            {
-                raxis = raxis - 1;
-                player.rotation = Quaternion.Euler(0f, 0f, raxis);
-            }*/
-
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -75,15 +59,7 @@ public class Movement : MonoBehaviour
     }
     
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        inAir = false;
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        inAir = true;
-    }
+    
 
 
 
