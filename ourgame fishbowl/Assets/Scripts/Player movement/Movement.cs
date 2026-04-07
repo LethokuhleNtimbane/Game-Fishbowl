@@ -8,9 +8,11 @@ public class Movement : MonoBehaviour
     public Rigidbody2D rbPlayer;
     public SpriteRenderer render;
     public float playerheight;
-    public float JumpForce;
-    public float doubleJumpForce;
+    public float JumpForce = 3f;
+    public float doubleJumpForce = 2f;
     private bool candoublejump;
+    public GameObject escapemenu;
+    public GameObject interactobject;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,9 +39,16 @@ public class Movement : MonoBehaviour
                 rbPlayer.angularVelocity = 0;
                 Jump(doubleJumpForce);
                 candoublejump = false;
+
+                
             }
 
-
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            escapemenu.SetActive(true);
+            GetComponent<Movement>().enabled = false;
+            interactobject.SetActive(false);
+        }
 
         if (Input.GetKey(KeyCode.D) )
         {
