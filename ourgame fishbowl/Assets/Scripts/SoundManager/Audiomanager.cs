@@ -7,6 +7,8 @@ public class Audiomanager : MonoBehaviour
     
     [SerializeField] AudioSource audioSource;
     [SerializeField] Slider slider;
+
+
     //[SerializeField] AudioSource SFX;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 

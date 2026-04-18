@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 7351243}
   - component: {fileID: 7351242}
   - component: {fileID: 7351244}
+  - component: {fileID: 7351245}
   m_Layer: 7
   m_Name: Skateboard_0
   m_TagString: Floor
@@ -258,6 +259,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.08, y: 0.43}
   m_EdgeRadius: 0
+--- !u!95 &7351245
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7351241}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c60a2d0749fac549aa5432a0808fbf3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &18552251
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &148767191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2551,6 +2574,7 @@ MonoBehaviour:
   doubleJumpForce: 8
   canvas: {fileID: 148767190}
   escapemenu: {fileID: 1685646944}
+  Jumpnoise: {fileID: 8300000, guid: fc5cf5ee3ae2c6c4aa87cd8a7ca1b16b, type: 3}
   gameboardtext: {fileID: 2107790341}
 --- !u!50 &319517107
 Rigidbody2D:
@@ -2693,7 +2717,7 @@ Transform:
   m_GameObject: {fileID: 319517105}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.34, y: -0.29817998, z: 0}
+  m_LocalPosition: {x: -6.45, y: -0.29817998, z: 0}
   m_LocalScale: {x: -0.07972806, y: 0.07979189, z: 0.07979189}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3594,36 +3618,13 @@ GameObject:
   m_Component:
   - component: {fileID: 410970062}
   - component: {fileID: 410970061}
-  - component: {fileID: 410970060}
   m_Layer: 3
   m_Name: vase with stand
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &410970060
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410970059}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f7b9fda84a38d914d8633d11813e0159, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &410970061
 SpriteRenderer:
   serializedVersion: 2
@@ -3710,7 +3711,8 @@ GameObject:
   - component: {fileID: 413546990}
   - component: {fileID: 413546991}
   - component: {fileID: 413546992}
-  m_Layer: 0
+  - component: {fileID: 413546993}
+  m_Layer: 7
   m_Name: truck_0
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -3838,6 +3840,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 17.77, y: 10.76}
   m_EdgeRadius: 0
+--- !u!95 &413546993
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413546989}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e400196e060743a438368fc3e6bd1895, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &419372219
 GameObject:
   m_ObjectHideFlags: 0
@@ -9088,7 +9112,7 @@ GameObject:
   - component: {fileID: 982554919}
   - component: {fileID: 982554920}
   - component: {fileID: 982554921}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Basketball_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9405,6 +9429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035735189}
   - component: {fileID: 1035735190}
+  - component: {fileID: 1035735191}
   m_Layer: 7
   m_Name: Animation trigger skateboard
   m_TagString: Untagged
@@ -9473,6 +9498,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1035735191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035735188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de21cbe0028aca48ae9c53599d744b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Movestuff
+  skateboard: {fileID: 7351245}
 --- !u!1 &1048402185
 GameObject:
   m_ObjectHideFlags: 0
@@ -10267,7 +10305,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1124220608}
   - component: {fileID: 1124220609}
-  m_Layer: 0
+  - component: {fileID: 1124220610}
+  m_Layer: 7
   m_Name: Animation truck trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10335,6 +10374,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1124220610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124220607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbb66ffcb8f4fe4887be8b0257968a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Truck
+  MoveTruck: {fileID: 413546993}
 --- !u!1 &1124669000
 GameObject:
   m_ObjectHideFlags: 0
@@ -11736,9 +11788,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1349212988}
   - component: {fileID: 1349212989}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11751,8 +11803,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349212987}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.418, y: -0.456, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.418001, y: -0.45600006, z: 0}
   m_LocalScale: {x: 1.3, y: 1.5921134, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16789,7 +16841,7 @@ Transform:
   m_GameObject: {fileID: 2107439801}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.31, y: -0.33817998, z: -18.1}
+  m_LocalPosition: {x: -6.4199996, y: -0.33817998, z: -18.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

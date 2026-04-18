@@ -1,9 +1,7 @@
-using Unity.Cinemachine;
 using UnityEngine;
 
-public class moveskatebaord : MonoBehaviour
+public class YouLost : MonoBehaviour
 {
-    public Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,12 +12,5 @@ public class moveskatebaord : MonoBehaviour
     void Update()
     {
         
-    }
-  
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        animator.SetTrigger("Skateboard");
-         
-       
     }
 }

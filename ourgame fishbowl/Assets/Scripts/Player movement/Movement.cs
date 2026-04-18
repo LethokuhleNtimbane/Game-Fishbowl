@@ -59,6 +59,8 @@ public class Movement : MonoBehaviour
                 Jump(doubleJumpForce);
                 candoublejump = false;
             }
+
+       
         }
 
         if (Input.GetKey(KeyCode.Escape))
