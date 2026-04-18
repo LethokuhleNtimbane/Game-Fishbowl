@@ -3,17 +3,35 @@ using UnityEngine.UI;
 
 public class Audiomanager : MonoBehaviour
 {
+    public static Audiomanager instance;
+    
     [SerializeField] AudioSource audioSource;
     [SerializeField] Slider slider;
     //[SerializeField] AudioSource SFX;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public AudioClip background;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     //public AudioClip soundeffects;
     void Start()
     {
         audioSource.clip = background;
         audioSource.Play();
+
+
 
         if (PlayerPrefs.HasKey("musicVolume"))
         {
@@ -24,6 +42,8 @@ public class Audiomanager : MonoBehaviour
         else
         {
             load();
+
+            AudioListener.volume = slider.value;
         }
     }
 
