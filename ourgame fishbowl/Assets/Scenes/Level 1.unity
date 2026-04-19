@@ -1485,7 +1485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &204759637
 Transform:
   m_ObjectHideFlags: 0
@@ -3289,6 +3289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 346950724}
+  - component: {fileID: 346950727}
   - component: {fileID: 346950725}
   - component: {fileID: 346950726}
   m_Layer: 0
@@ -3319,7 +3320,6 @@ Transform:
   - {fileID: 419372220}
   - {fileID: 823972698}
   - {fileID: 1454339353}
-  - {fileID: 1844895450}
   m_Father: {fileID: 1181806091}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &346950725
@@ -3332,7 +3332,7 @@ Animator:
   m_GameObject: {fileID: 346950723}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87d0325a9da73a34a8605026234c6c82, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9e0e09f0f13401e409f99464bd0cca88, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3344,7 +3344,53 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &346950726
+--- !u!61 &346950726
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346950723}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -8.28129, y: 0.53110456}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2, y: 0.2}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 7.5699577, y: 8.278093}
+  m_EdgeRadius: 0
+--- !u!114 &346950727
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3357,8 +3403,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SlidingDoor
   animator: {fileID: 346950725}
-  sawyou: {fileID: 1844895449}
-  speedopen: 10
+  JordgeJnr: {fileID: 1454339354}
+  Jordge: {fileID: -4829471592748508146, guid: 1d9415197918f3344933a7f17c9bda49, type: 3}
+  speedopen: 20
+  youlost: {fileID: 1688453295}
+  disapear: {fileID: 1377738164}
+  exitbutton: {fileID: 226065865}
+  pausemenu: {fileID: 148767190}
+  movement: {fileID: 319517106}
+  howlost: {fileID: 744894449}
 --- !u!1 &353987298
 GameObject:
   m_ObjectHideFlags: 0
@@ -7706,7 +7759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &731735404
 Transform:
   m_ObjectHideFlags: 0
@@ -8275,8 +8328,8 @@ Transform:
   m_GameObject: {fileID: 773572794}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.1634, y: -0.07661003, z: 0}
-  m_LocalScale: {x: 0.6379123, y: 0.630036, z: 0.635181}
+  m_LocalPosition: {x: -10.2, y: -0.08, z: 0}
+  m_LocalScale: {x: 0.54394, y: 0.53723, z: 0.54161}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 346950724}
@@ -8366,8 +8419,8 @@ Transform:
   m_GameObject: {fileID: 823972697}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.8225, y: 0.5005, z: 0}
-  m_LocalScale: {x: 8.439217, y: 7.74307, z: 1}
+  m_LocalPosition: {x: -8.3939, y: -0.05378, z: 0}
+  m_LocalScale: {x: 7.196, y: 6.6024, z: 0.85269}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 346950724}
@@ -9732,7 +9785,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 995288626}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 18552251}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 18552254}
+        m_TargetAssemblyTypeName: leveloader, Assembly-CSharp
+        m_MethodName: Triggeranimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 18552254}
+        m_TargetAssemblyTypeName: leveloader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &995288626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11311,18 +11400,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18552254}
-        m_TargetAssemblyTypeName: leveloader, Assembly-CSharp
-        m_MethodName: LoadLevel
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 18552251}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -11345,7 +11422,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 18552254}
+        m_TargetAssemblyTypeName: leveloader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1147850974
 MonoBehaviour:
@@ -13078,12 +13167,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d96d779386fab44890da4edd8398328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::mousetrap
-  youlost: {fileID: 0}
-  disapear: {fileID: 0}
-  exitbutton: {fileID: 0}
-  pausemenu: {fileID: 0}
-  movement: {fileID: 0}
-  howlost: {fileID: 0}
+  youlost: {fileID: 1688453295}
+  disapear: {fileID: 1377738164}
+  exitbutton: {fileID: 226065865}
+  pausemenu: {fileID: 148767190}
+  movement: {fileID: 319517106}
+  howlost: {fileID: 744894449}
 --- !u!1 &1425283479
 GameObject:
   m_ObjectHideFlags: 0
@@ -13341,8 +13430,8 @@ Transform:
   m_GameObject: {fileID: 1454339352}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.3198, y: -0.6361, z: 0}
-  m_LocalScale: {x: 0.1812917, y: 0.17833824, z: -0.14244719}
+  m_LocalPosition: {x: -8.8179, y: -1.0229, z: 0}
+  m_LocalScale: {x: 0.15459, y: 0.15207, z: -0.12146}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 346950724}
@@ -16106,105 +16195,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1844895449
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1844895450}
-  - component: {fileID: 1844895451}
-  - component: {fileID: 1844895452}
-  m_Layer: 0
-  m_Name: trigger for jordge to catch you
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1844895450
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844895449}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.82, y: 0, z: 0}
-  m_LocalScale: {x: 8.425, y: 11.042, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 346950724}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1844895451
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844895449}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1844895452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844895449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f5b778f786e6f44d81ebfd060485f91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  youlost: {fileID: 1688453295}
-  disapear: {fileID: 1377738164}
-  exitbutton: {fileID: 226065865}
-  pausemenu: {fileID: 148767190}
-  movement: {fileID: 319517106}
-  Jordgecaughtyou: {fileID: -4829471592748508146, guid: 1d9415197918f3344933a7f17c9bda49, type: 3}
-  howlost: {fileID: 744894449}
-  Jordge: {fileID: 1454339354}
 --- !u!1 &1884037285
 GameObject:
   m_ObjectHideFlags: 0
@@ -16959,7 +16949,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1960787058}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 18552251}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 18552254}
+        m_TargetAssemblyTypeName: leveloader, Assembly-CSharp
+        m_MethodName: Triggeranimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 18552254}
+        m_TargetAssemblyTypeName: leveloader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1960787058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18217,8 +18243,8 @@ Transform:
   m_GameObject: {fileID: 2098930201}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.6308, y: -0.078070015, z: 0}
-  m_LocalScale: {x: 0.6361515, y: 0.63004446, z: 0.6361515}
+  m_LocalPosition: {x: -6.5926, y: -0.08149, z: 0}
+  m_LocalScale: {x: 0.54244, y: 0.53723, z: 0.54161}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 346950724}
