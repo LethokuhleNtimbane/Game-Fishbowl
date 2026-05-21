@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour
     private bool pause;
     [SerializeField] private Animator jumpeffect;
    
+   
     Audiomanager audiomanager;
   
 
@@ -65,6 +66,8 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
+         
+            
             if (isGrounded)
             {
                 Jump(JumpForce);
@@ -199,10 +202,7 @@ public class Movement : MonoBehaviour
     {
         GetIsGrounded();
 
-        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.CompareTag("Water"))
-        {
-
-        }
+      
     }
    
     private void Jump(float force)
