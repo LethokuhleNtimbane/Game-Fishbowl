@@ -7,7 +7,8 @@ using TMPro;
 
 public class leveloader : MonoBehaviour
 {
-    public GameObject loadingscreen;
+    public int sceneIndex = 2;
+    /*public GameObject loadingscreen;
     public Slider slider;
     public TextMeshProUGUI progresstext;
     public Animator animator;
@@ -19,16 +20,27 @@ public class leveloader : MonoBehaviour
     public void Triggeranimation()
     {
         animator.SetTrigger("play");
+    }*/
+    public void Level1()
+    {
+        sceneIndex = 2;
     }
-  
-    public void LoadLevel (int sceneIndex) 
+    public void Level2()
+    {
+        sceneIndex = 3;
+    }
+    public void LoadLevel() 
     {
         
-       StartCoroutine(LoadAsynchronously(sceneIndex));
+       SceneManager.LoadScene (sceneIndex);
        
     }
+    public void BackToMain()
+    {
+        SceneManager.LoadScene(1);
+    }
 
-    IEnumerator LoadAsynchronously (int sceneIndex)
+   /* IEnumerator LoadAsynchronously (int sceneIndex)
     {
       
 
@@ -49,11 +61,8 @@ public class leveloader : MonoBehaviour
 
             yield return null;
         }
-    }
+    }*/
 
-    public void QuitGame()
-    {
-        Application.Quit();
-      
-    }
+   
 }
+

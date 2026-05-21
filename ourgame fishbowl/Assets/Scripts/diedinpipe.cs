@@ -1,0 +1,33 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.Rendering.Universal;
+
+public class diedinpipe : MonoBehaviour
+{
+    public GameObject youlost;
+    public GameObject disapear;
+    public GameObject exitbutton;
+    public GameObject pausemenu;
+    public Light2D light2D;
+
+    public Movement movement;
+    public TextMeshProUGUI howlost;
+    public Watermeter watermeter;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            light2D.intensity = 1;
+            youlost.SetActive(true);
+            pausemenu.SetActive(true);
+            disapear.SetActive(false);
+            exitbutton.SetActive(false);
+            movement.enabled = false;
+            watermeter.enabled = false;
+            howlost.text = "You got stuck in a sewage pipe";
+            Audiomanager.instance.PlaySFX(Audiomanager.instance.death);
+
+        }
+    }
+}
