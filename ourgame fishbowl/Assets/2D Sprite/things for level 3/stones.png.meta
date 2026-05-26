@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fa66a159c9d819945ba292518c6304f1
+guid: cab370cade3430248861c70d40e2fd47
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1278585010018493196
-    second: Picture for select screen Lvl2_0
+      213: 5171221398253030913
+    second: stones_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Picture for select screen Lvl2_0
+      name: stones_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 2335
-        height: 1305
+        y: 364
+        width: 1710
+        height: 306
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c03aa49da427eb110800000000000000
-      internalID: 1278585010018493196
+      spriteID: 10e45c1a67ed3c740800000000000000
+      internalID: 5171221398253030913
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Picture for select screen Lvl2_0: 1278585010018493196
+      stones_0: 5171221398253030913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

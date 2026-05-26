@@ -29,6 +29,10 @@ public class leveloader : MonoBehaviour
     {
         sceneIndex = 3;
     }
+    public void Level3()
+    {
+        sceneIndex = 4;
+    }
     public void LoadLevel() 
     {
         
