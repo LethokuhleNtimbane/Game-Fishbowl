@@ -12,7 +12,7 @@ public class PressAnyKeyToStart : MonoBehaviour
         {
             KeyPressed = true;
             SceneManager.LoadScene(KeyCode);
-            Audiomanager.instance.PlaySFX(Audiomanager.instance.click);
+           Audiomanager.instance.PlaySFX(Audiomanager.instance.click);
         }
     }
 }

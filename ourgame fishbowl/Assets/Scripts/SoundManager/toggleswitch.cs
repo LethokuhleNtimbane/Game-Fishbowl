@@ -26,11 +26,12 @@ public class toggleswitch : MonoBehaviour
      
     }
 
+
     void OnToggleChanged(bool isOn)
     {
         Audiomanager.SFXOn = isOn;
         PlayerPrefs.SetInt("SFX", isOn ? 1 : 0);
-
+        PlayerPrefs.Save();
         checkmark.sprite = isOn ? on : off;
 
         status.text = isOn ? "ON" : "OFF";

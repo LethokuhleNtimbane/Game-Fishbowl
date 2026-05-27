@@ -44,6 +44,7 @@ public class Watermeter : MonoBehaviour
 
     public void Update()
     {
+       
         if (pause) return;
        if (inwater == true)
         {
@@ -124,6 +125,13 @@ public class Watermeter : MonoBehaviour
         }
       
         
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            inwater = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

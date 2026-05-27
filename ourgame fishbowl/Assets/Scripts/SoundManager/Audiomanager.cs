@@ -9,7 +9,7 @@ public class Audiomanager : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioSource SFXSound;
-    public Slider slider;
+   
     public AudioClip death;
     public AudioClip jump;
     public AudioClip click;
@@ -28,7 +28,6 @@ public class Audiomanager : MonoBehaviour
     {
         if (instance == null)
         {
-
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
@@ -40,53 +39,17 @@ public class Audiomanager : MonoBehaviour
 
         SFXOn = PlayerPrefs.GetInt("SFX", 1) == 1;
     }
-    //public AudioClip soundeffects;
-    void Start()
+    private void Start()
     {
         audioSource.clip = background;
         audioSource.Play();
-
-
-
-        if (PlayerPrefs.HasKey("musicVolume"))
-        {
-            PlayerPrefs.SetFloat("musicVolume", 1);
-
-
-        }
-
-        load();
-
-        AudioListener.volume = slider.value;
-
+       
     }
-
-    public void ChangeVolume()
-    {
-        AudioListener.volume = slider.value;
-        save();
-    }
-
-    private void load()
-    {
-        slider.value = PlayerPrefs.GetFloat("musicVolume");
-    }
-
-    private void save()
-    {
-        PlayerPrefs.SetFloat("musicVolume", slider.value);
-    }
-
     public void PlaySFX(AudioClip clip)
     {
         if (!SFXOn) return;
+
         SFXSound.PlayOneShot(clip);
     }
-    public void Onclick()
-    {
-        SFXSound.PlayOneShot(click);
-    }
-
-
 
 }
