@@ -82,7 +82,7 @@ public class Movement : MonoBehaviour
                 rbPlayer.linearVelocity = Vector3.zero;
                 Jump(doubleJumpForce);
                 candoublejump = false;
-                Audiomanager.instance.PlaySFX(Audiomanager.instance.jump);
+               Audiomanager.instance.PlaySFX(Audiomanager.instance.jump);
                 
                 doit();             
                

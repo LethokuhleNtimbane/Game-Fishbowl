@@ -38,7 +38,7 @@ public class waterbubblepop : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            Audiomanager.instance.PlaySFX(Audiomanager.instance.hitbubble);
+           Audiomanager.instance.PlaySFX(Audiomanager.instance.hitbubble);
             popped = true;
             waterbubble.SetTrigger("pop");
 
