@@ -30,6 +30,13 @@ public class waterPush : MonoBehaviour
     
 
     }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            inwater = true;
+        }
+    }
     public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b03149063fa05c488ffc0e98fb86b6e
+guid: 7c4655c6391dc1f4892bd3fc95ced0a5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7443756053782179069
-    second: background_0
+      213: -7015606865015767746
+    second: darker specs_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_0
+      name: darker specs_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 354
-        width: 1896
-        height: 690
+        x: 662
+        y: 479
+        width: 109
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30356abce4772b890800000000000000
-      internalID: -7443756053782179069
+      spriteID: e3d71fef9be83ae90800000000000000
+      internalID: -7015606865015767746
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: beec071deb7e47548a020f6710dec471
+    spriteID: 4bcc9841c68cc4d4abdbe77588c4cc43
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_0: -7443756053782179069
+      darker specs_0: -7015606865015767746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
