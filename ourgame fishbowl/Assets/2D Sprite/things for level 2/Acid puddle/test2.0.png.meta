@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 12800d17b1b767d42ada27de8ce71e1f
+guid: 6dfa14797f2eaf74db070fe48bcbb993
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1278585010018493196
-    second: Picture for select screen Lvl2_0
+      213: 6081320182221448499
+    second: test2.0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Picture for select screen Lvl2_0
+      name: test2.0_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2331
-        height: 1300
+        x: 2
+        y: 847
+        width: 275
+        height: 190
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c03aa49da427eb110800000000000000
-      internalID: 1278585010018493196
+      spriteID: 33529ba4c70356450800000000000000
+      internalID: 6081320182221448499
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 478e437bf40d12c4c879e5cad0dde155
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Picture for select screen Lvl2_0: 1278585010018493196
+      test2.0_0: 6081320182221448499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

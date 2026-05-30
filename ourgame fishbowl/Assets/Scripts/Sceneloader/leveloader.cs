@@ -9,9 +9,7 @@ public class leveloader : MonoBehaviour
 {
     public int sceneIndex = 2;
     
-    /*public GameObject loadingscreen;
-    public Slider slider;
-    public TextMeshProUGUI progresstext;
+   
     public Animator animator;
     
     public float transitiontime = 2f;
@@ -21,7 +19,7 @@ public class leveloader : MonoBehaviour
     public void Triggeranimation()
     {
         animator.SetTrigger("play");
-    }*/
+    }
     public void Level1()
     {
         sceneIndex = 2;
@@ -45,31 +43,40 @@ public class leveloader : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
- 
-    
-
-   /* IEnumerator LoadAsynchronously (int sceneIndex)
+    public void loadwithtransition()
     {
-      
+        LoadLevelT();
+    }
 
-        yield return new WaitForSeconds(transitiontime);
-      
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
-        loadingscreen.SetActive(true);
 
-        while (operation.isDone == false)
+    IEnumerator LoadLevelT()
+    {
+      if (sceneIndex == 2)
         {
-            float progress = Mathf.Clamp01(operation.progress / .9f);
+            animator.SetTrigger("Level1");
 
-            slider.value = progress;
-            progresstext.text = progress * 100f + "%";
-            
+            yield return new WaitForSeconds(transitiontime);
 
-
-            yield return null;
+            SceneManager.LoadScene(sceneIndex);
         }
-    }*/
+        if (sceneIndex == 3)
+        {
+            animator.SetTrigger("Level2");
+
+            yield return new WaitForSeconds(transitiontime);
+
+            SceneManager.LoadScene(sceneIndex);
+        }
+        if (sceneIndex == 4)
+        {
+            animator.SetTrigger("Level3");
+
+            yield return new WaitForSeconds(transitiontime);
+
+            SceneManager.LoadScene(sceneIndex);
+        }
+    }
 
    
 }
